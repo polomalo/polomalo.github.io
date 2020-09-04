@@ -1,0 +1,265 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700);@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css);* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px; }
+
+body {
+  margin: 0; }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: #363636; }
+
+h2 {
+  margin: 0 0 20px;
+  font-size: 22px;
+  color: #464646; }
+
+h1 {
+  font-size: 55px;
+  margin: 0;
+  color: #363636; }
+
+p {
+  margin: 0 0 10px;
+  line-height: 1.5; }
+
+.pad-15 {
+  margin: 0 -15px; }
+
+.pad-15 > div {
+  padding: 0 15px; }
+
+.col-2 {
+  width: 16.666%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.333%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-8 {
+  width: 66.666%; }
+
+.col-10 {
+  width: 83.333%; }
+
+.col-12 {
+  width: 100%; }
+
+.col-5 {
+  width: 20%; }
+
+.container {
+  width: 1200px;
+  margin: 0 auto; }
+
+.col-40 {
+  width: 40%; }
+
+.col-60 {
+  width: 60%; }
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.ta-left {
+  text-align: left; }
+
+.ta-center {
+  text-align: center; }
+
+.ta-right {
+  text-align: right; }
+
+.cv__left {
+  background: #f3f4f5;
+  padding: 100px 0 50px;
+  position: relative;
+  overflow: hidden; }
+  .cv__left--photo {
+    text-align: center;
+    z-index: 2;
+    position: relative; }
+    .cv__left--photo--back {
+      width: 260px;
+      height: 260px;
+      background: #fff;
+      border-radius: 50%;
+      margin: 0 auto;
+      position: relative; }
+      .cv__left--photo--back img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        width: 230px;
+        height: 230px;
+        border-radius: 50%; }
+  .cv__left--contactInfo {
+    padding: 50px 80px;
+    color: #363636; }
+    .cv__left--contactInfo--mob {
+      margin-bottom: 10px; }
+      .cv__left--contactInfo--mob a:hover {
+        color: #f0ae12; }
+      .cv__left--contactInfo--mob a:visited {
+        color: #363636; }
+    .cv__left--contactInfo--email {
+      margin-bottom: 10px; }
+      .cv__left--contactInfo--email a:hover {
+        color: #f0ae12; }
+      .cv__left--contactInfo--email a:visited {
+        color: #363636; }
+  .cv__left--education {
+    padding: 0 80px;
+    color: #363636; }
+    .cv__left--education--item p:first-child {
+      background: #f0ae12;
+      max-width: 100px;
+      padding: 3px;
+      font-weight: 600;
+      text-align: center;
+      border-radius: 6px; }
+  .cv__left--courses {
+    padding: 50px 80px;
+    color: #363636; }
+    .cv__left--courses--item p:first-child {
+      background: #f0ae12;
+      max-width: 130px;
+      padding: 3px;
+      font-weight: 600;
+      text-align: center;
+      border-radius: 6px; }
+  .cv__left--skills {
+    padding: 0 80px;
+    color: #363636; }
+    .cv__left--skills--item {
+      margin-bottom: 20px; }
+      .cv__left--skills--item--rate {
+        height: 20px;
+        position: relative;
+        background: #e1e1e1;
+        border-radius: 10px;
+        overflow: hidden; }
+        .cv__left--skills--item--rate > span {
+          display: block;
+          height: 100%;
+          border-radius: 10px;
+          background: #f0ae12; }
+  .cv__left--leftParal {
+    position: absolute;
+    top: -50px;
+    left: -120px;
+    z-index: 1; }
+    .cv__left--leftParal img {
+      width: 60%; }
+  .cv__left--rightParal {
+    position: absolute;
+    top: 120px;
+    right: -80px;
+    z-index: 2;
+    opacity: 0.6; }
+    .cv__left--rightParal img {
+      width: 30%; }
+
+.cv__right {
+  padding: 100px 50px 50px; }
+  .cv__right h1 {
+    margin: 50px 0 10px; }
+    .cv__right h1 span {
+      font-size: 55px;
+      color: #f0ae12; }
+  .cv__right > h2 {
+    font-size: 32px;
+    font-weight: 400; }
+  .cv__right--aboutMe {
+    margin: 142px 0 35px;
+    color: #707070; }
+  .cv__right--why {
+    color: #707070;
+    margin-bottom: 75px; }
+  .cv__right--hobbies {
+    margin-bottom: 50px; }
+    .cv__right--hobbies--item {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #464646;
+      position: relative; }
+      .cv__right--hobbies--item span {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        display: block;
+        width: 75px;
+        height: 75px;
+        background: #fff;
+        border-radius: 50%; }
+  .cv__right--portfolio--item {
+    height: 120px;
+    position: relative;
+    background: #e1e1e1;
+    border-radius: 10px;
+    z-index: 2; }
+    .cv__right--portfolio--item img {
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+    .cv__right--portfolio--item:hover {
+      cursor: pointer;
+      -webkit-box-shadow: 0px 0px 6px 0px rgba(70, 70, 70, 0.75);
+      box-shadow: 0px 0px 6px 0px rgba(70, 70, 70, 0.75); }
+      .cv__right--portfolio--item:hover .cv__right--portfolio--item--hover {
+        display: block; }
+    .cv__right--portfolio--item--hover {
+      display: none;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(240, 174, 18, 0.3);
+      border-radius: 10px; }
+
+.fas {
+  margin-right: 15px;
+  color: #f0ae12; }
+
+.fa-car, .fa-motorcycle,
+.fa-bed, .fa-cookie-bite {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: #f0ae12; }
+
+.fa-search {
+  color: #464646;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 40px; }
