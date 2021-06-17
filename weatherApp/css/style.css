@@ -13,6 +13,14 @@ body{
     background: linear-gradient(rgb(47,150,163), rgb(48,62,143));
     color: wheat;
 }
+
+.weather__mainInfo{
+    background: red;
+}
+
+
+
+
 .weather__location, .weather__temperature{
     height: 30vh;
     display: flex;

@@ -1,37 +1,47 @@
 window.addEventListener('load', () => {
-    let long, lat;
-    let temperatureDesc = document.getElementsByClassName('weather__temperature--description')[0];
-    let temperatureDegree = document.getElementsByClassName('weather__temperature--degree--value')[0];
-    let locationTimezone = document.getElementsByClassName('weather__location--timezone--h1')[0];
-    let Icon = document.getElementsByClassName('weather__location--icon')[0];
-    let temperatureSection = document.getElementsByClassName('weather__temperature--degree')[0];
+    let lon, lat;
+    let cityName = document.getElementsByClassName('weather__mainInfo--header--name')[0];
+    let locationTimezone = document.getElementsByClassName('weather__mainInfo--header--timezone')[0];
+    let Icon = document.getElementsByClassName('weather__mainInfo--icon')[0];
+    let temperatureDegree = document.getElementsByClassName('weather__mainInfo--temperature--degree--value')[0];
+    const temperatureSpan = document.getElementsByClassName('weather__mainInfo--temperature--degree--symbol')[0];
+    let temperatureDesc = document.getElementsByClassName('weather__mainInfo--temperature--description')[0];
+    let temperatureSection = document.getElementsByClassName('weather__mainInfo--temperature--degree')[0];
 
-    const temperatureSpan = document.getElementsByClassName('weather__temperature--degree--symbol')[0];
+
+
 
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(position => {
-            long = position.coords.longitude;
+            lon = position.coords.longitude;
             lat = position.coords.latitude;
-            const api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=3a90ce0d88c9ed70698a799aa7a391b0`
+            //const newAPI = `https://api.weatherbit.io/v2.0/current?lat=${lat}&lon=${lon}&key=dd92b448afd7455a9ae32660ec02fe80&include=hourly`
+            // const api = `https://api.tomorrow.io/v4/timelines?location=${lat},${lon}=temperature&timesteps=1h&units=metric&apikey=1IBzPP96upICMIPMVUXM01koFkXkRsdB`
 
-            fetch(api)
+            const test = `https://api.weatherbit.io/v2.0/forecast/hourly?lat=${lat}&lon=${lon}&key=dd92b448afd7455a9ae32660ec02fe80&hours=24`
+
+            fetch(test)
                 .then(response => {
                     return response.json();
                 })
-                .then(data => {
-                    console.log(data);
-                    const { temp } = data.main;
-                    const { description, icon } = data.weather[0];
-                    const { country } = data.sys;
-                    let celsius = Math.round(temp - 273.15);
-                    let far = Math.round((celsius * 9 / 5) + 32)
+                .then(allData => {
+                    console.log(allData);
+                    const { timezone, city_name } = allData;
+                    const { temp } = allData.data[0];
+                    //const { temp, timezone } = allData.data[0];
+                    const { description, icon } = allData.data[0].weather;
+                    let temperature = Math.round(temp);
+                    let far = Math.round((temp * 9 / 5) + 32)
 
-                    temperatureDegree.innerHTML = celsius;
+                    cityName.innerHTML = `<h1>${city_name}</h1>`;
+
+                    locationTimezone.innerHTML = `<h2>${timezone}</h2>`;
+                    temperatureDegree.innerHTML = temperature;
                     temperatureDesc.innerHTML = description;
-                    locationTimezone.innerHTML = data.name + '/' + country;
 
 
-                    Icon.innerHTML = `<img src="http://openweathermap.org/img/wn/${icon}@2x.png">`;
+
+                    Icon.innerHTML = `<img src="https://www.weatherbit.io/static/img/icons/${icon}.png">`;
 
                     temperatureSection.addEventListener('click', () => {
                         if (temperatureSpan.innerHTML === 'C') {
@@ -39,7 +49,7 @@ window.addEventListener('load', () => {
                             temperatureDegree.innerHTML = far;
                         } else {
                             temperatureSpan.innerHTML = 'C';
-                            temperatureDegree.innerHTML = celsius;
+                            temperatureDegree.innerHTML = temperature;
                         }
                     })
 
