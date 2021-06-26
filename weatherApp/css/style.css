@@ -5,48 +5,116 @@
 }
 
 body{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     background: linear-gradient(rgb(47,150,163), rgb(48,62,143));
     color: wheat;
 }
 
+ul{
+    list-style-type: none;
+}
+
+section.weather {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.weather__mainInfo--header {
+    text-align: center;
+}
+
+.weather__mainInfo--header--name{
+    font-size: 35px;
+}
+
+.weather__mainInfo--header--timezone{
+    font-size: 14px;
+}
+
 .weather__mainInfo{
     background: red;
+    padding: 40px;
+    width: 70%;
+    margin: 0 auto;
 }
 
 
-
-
-.weather__location, .weather__temperature{
-    height: 30vh;
+.weather__mainInfo--body--temperature{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    width: 100%;
+    height: 160px;
 }
 
-.weather__temperature{
-    flex-direction: column;
-}
-
-.weather__temperature--degree{
+.weather__mainInfo--body--temperature--degree{
     display: flex;
-    align-items: center;
+    text-align: center;
+    line-height: 2;
+    width: 50%;
+    position: relative;
     cursor: pointer;
 }
 
-.weather__temperature--degree span{
-    margin: 10px;
-    font-size: 30px;
+.weather__mainInfo--body--temperature--degree--wrapper {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.weather__temperature--degree h2{
-    font-size: 40px;
+.weather__mainInfo--body--temperature--degree--value{
+    font-size: 80px;
 }
 
-.weather__temperature--description{
+.weather__mainInfo--body--temperature--degree--symbol{
+    font-size: 80px;
+}
+
+
+
+.weather__mainInfo--body--icon{
+    position: relative;
+    width: 50%;
+}
+
+.weather__mainInfo--body--icon img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+}
+
+.weather__mainInfo--body--description {
+    text-align: center;
     font-size: 25px;
+}
+
+/* .weather__mainInfo--body--timeline ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather__mainInfo--body--timeline ul > li{
+    flex: 0 0 20%;
+} */
+
+.glide__slide {
+    border: 2px solid black;
+}
+
+.glide__track ul > li > div{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.glide__track ul > li > div > img{
+    width: 50%;
+    margin: 0 auto;
 }

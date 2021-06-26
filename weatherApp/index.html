@@ -5,38 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/glide/glide.core.min.css">
     <title>Weather App</title>
 </head>
 
 <body>
     <header></header>
-    <main class="main">
+    <main>
         <section class="weather">
-            <div class="weather__mainInfo">
-                <div class="weather__mainInfo--header">
-                    <div class="weather__mainInfo--header--name">
-                        <h1>Name of city</h1>
+            <div class="container">
+                <div class="weather__mainInfo">
+                    <div class="weather__mainInfo--header">
+                        <div class="weather__mainInfo--header--name">
+                            <h1>Name of city</h1>
+                        </div>
+                        <div class="weather__mainInfo--header--timezone">
+                            <h2>Timezone</h2>
+                        </div>
                     </div>
-                    <div class="weather__mainInfo--header--timezone">
-                        <h2>Timezone</h2>
-                    </div>
-                </div>
-                <div class="weather__mainInfo--icon">
+                    <div class="weather__mainInfo--body">
+                        <div class="weather__mainInfo--body--temperature">
+                            <div class="weather__mainInfo--body--temperature--degree">
+                                <div class="weather__mainInfo--body--temperature--degree--wrapper">
+                                    <h2 class="weather__mainInfo--body--temperature--degree--value">34</h2>
+                                    <span class="weather__mainInfo--body--temperature--degree--symbol">&deg;C</span>
+                                </div>
+                            </div>
+                            <div class="weather__mainInfo--body--icon"></div>
+                        </div>
+                        <div class="weather__mainInfo--body--description">too cold</div>
+                        <div class="weather__mainInfo--body--timeline">
+                            <div class="glide">
+                                <div class="glide__track" data-glide-el="track">
 
-                </div>
-                <div class="weather__mainInfo--temperature">
-                    <div class="weather__mainInfo--temperature--degree">
-                        <h2 class="weather__mainInfo--temperature--degree--value">34</h2>
-                        <span class="weather__mainInfo--temperature--degree--symbol">C</span>
+                                </div>
+
+                                <div class="glide__arrows" data-glide-el="controls">
+                                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="weather__mainInfo--body--sunset">
+
+                        </div>
                     </div>
-                    <div class="weather__mainInfo--temperature--description">too cold</div>
                 </div>
+
+
+
+
+
             </div>
+
         </section>
     </main>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script src="./js/main.js"></script>
+
+
 </body>
 
 </html>
