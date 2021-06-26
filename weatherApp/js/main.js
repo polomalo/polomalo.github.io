@@ -18,7 +18,7 @@ window.addEventListener('load', () => {
             lon = position.coords.longitude;
             lat = position.coords.latitude;
             const newAPI = `https://api.weatherbit.io/v2.0/current?lat=${lat}&lon=${lon}&key=dd92b448afd7455a9ae32660ec02fe80`
-            const sapi = ` http://api.weatherapi.com/v1/forecast.json?key=bfd229bfd4144e12853183505212606&q=${lat},${lon}`
+            const sapi = ` https://api.weatherapi.com/v1/forecast.json?key=bfd229bfd4144e12853183505212606&q=${lat},${lon}`
 
             const api = `https://api.weatherbit.io/v2.0/forecast/hourly?lat=${lat}&lon=${lon}&key=dd92b448afd7455a9ae32660ec02fe80&hours=24`
 
