@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: gray;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.row{
+    display: flex;
+}
+
+.col-6{
+    width: 50%;
+}
+
+.header__devices{
+    width: 200px;
+    margin: 20px auto;
+}
+
+.header__devices--iphone, .header__devices--ipad{
+    text-align: center;
+}
+
+.header__devices--iphone > i, .header__devices--ipad > i{
+    font-size: 50px;
+}
+
+.header__message{
+    text-align: center;
+    
+}
+
+.main__window {
+    display: block;
+    margin: 100px auto;
+    width: 800px;
+    height: 600px;
+}
+
+#scene{
+    width: 100%;
+}
