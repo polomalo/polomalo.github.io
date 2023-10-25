@@ -18,8 +18,8 @@ try {
     $mail->setLanguage('ru', 'phpmailer/language/');
 
     //Recipients
-    $mail->setFrom($_POST['contactUs--email'], $_POST['name']);
-    $mail->addAddress('dima7012095@gmail.com', 'Dima');     //Add a recipient
+    $mail->setFrom('dima7012095@gmail.com', $_POST['name']);
+    $mail->addAddress('polomalo95@yandex.by', 'polomalo95');     //Add a recipient
     
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
