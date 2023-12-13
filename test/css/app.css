@@ -681,7 +681,7 @@ h3 {
 .main__quotes--info--slider--slide--desc {
   font-size: 30px;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 15px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -815,9 +815,11 @@ h3 {
           flex-direction: column;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   border-radius: 1rem;
+  -webkit-perspective: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
 }
 .main__visaTypes--item--content--front {
   background: #3a4f50;
@@ -3847,6 +3849,13 @@ h3 {
     max-width: 95%;
     margin: 0 auto;
   }
+  .main__contactUs--form--message h2 {
+    text-align: center;
+    font-size: 45px;
+  }
+  .main__contactUs--form--message p {
+    text-align: center;
+  }
   .main__contactUs--form .grid-row {
     grid-template-columns: 1fr;
   }
@@ -3857,9 +3866,10 @@ h3 {
   }
   .main__contactUs--form--info h3 {
     font-size: 25px;
+    text-align: center;
   }
   .main__contactUs--form--info--text {
-    font-size: 18px;
+    font-size: 16px;
   }
   .main__contactUs--form--info--text--email, .main__contactUs--form--info--text--address, .main__contactUs--form--info--text--number, .main__contactUs--form--info--text--workTime {
     margin-top: 25px;
