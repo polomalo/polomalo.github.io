@@ -15,14 +15,29 @@
             <img src="./images/content/logo/logo1.png" alt="">
           </div>
           <div class="header__nav--menu">
-            <ul class="header__nav--menu--list">
-              <li><a href="#">Главная</a></li>
-              <li><a href="#">О нас</a></li>
-              <li><a href="#">Услуги</a></li>
-              <li><a href="#">Новости</a></li>
-              <li><a href="#">Отзывы</a></li>
-              <li><a href="#">Обратная связь</a></li>
+            <ul class="header__nav--menu--list" id="header__nav--menu--list">
+              <li class="header__nav--menu--list--item"><a href="#main__banner">Главная</a></li>
+              <li class="header__nav--menu--list--item"><a href="#main__aboutUs">О нас</a></li>
+              <li class="header__nav--menu--list--item"><a href="#main__visaTypes">Услуги</a></li>
+              <li class="header__nav--menu--list--item"><a href="#main__news">Новости</a></li>
+              <li class="header__nav--menu--list--item"><a href="#main__feedback">Отзывы</a></li>
+              <li class="header__nav--menu--list--item"><a href="#main__contactUs">Обратная связь</a></li>
             </ul>
+            <ul class="header__nav--menu--list--sideBar" id="header__nav--menu--list--sideBar">
+              <li class="header__nav--menu--list--sideBar--item"><a href="#main__banner">Главная</a></li>
+              <li class="header__nav--menu--list--sideBar--item"><a href="#main__aboutUs">О нас</a></li>
+              <li class="header__nav--menu--list--sideBar--item"><a href="#main__visaTypes">Услуги</a></li>
+              <li class="header__nav--menu--list--sideBar--item"><a href="#main__news">Новости</a></li>
+              <li class="header__nav--menu--list--sideBar--item"><a href="#main__feedback">Отзывы</a></li>
+              <li class="header__nav--menu--list--sideBar--item"><a href="#main__contactUs">Обратная связь</a></li>
+            </ul>
+            <button class="header__nav--menu--burger" id="header__nav--menu--burger">
+              <div class="header__nav--menu--burger--lines">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </button>
           </div>
           <div class="header__nav--links">
             <div class="grid-row">
@@ -32,16 +47,24 @@
               <div class="header__nav--links--socials">
                 <div class="grid-row">
                   <div class="header__nav--links--socials--item">
-                    <i class="fa-brands fa-telegram"></i>
+                    <a href="tg://resolve?domain=ekaterenizm">
+                      <i class="fa-brands fa-telegram"></i>
+                    </a>
                   </div>
                   <div class="header__nav--links--socials--item">
-                    <i class="fa-brands fa-viber"></i>
+                    <a href="viber://chat?number=%2B375333461225">
+                      <i class="fa-brands fa-viber"></i>
+                    </a>
                   </div>
                   <div class="header__nav--links--socials--item">
-                    <i class="fa-brands fa-whatsapp"></i>
+                    <a href="https://wa.me/+375298870855" target="_blank">
+                      <i class="fa-brands fa-whatsapp"></i>
+                    </a>
                   </div>
                   <div class="header__nav--links--socials--item">
-                    <i class="fa-brands fa-instagram"></i>
+                    <a href="https://www.instagram.com/visastep/" target="_blank">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -52,27 +75,18 @@
     </div>
   </header>
   <main class="main">
-    <section class="main__banner">
+    <section class="main__banner" id="main__banner">
       <div class="container">
         <div class="main__banner--title">
           <h1><span>visa step</span><br>сделай шаг на встречу визе</h1>
           <span class="main__banner--title--line"></span>
           <h2>Консультация и помощь в оформлении визы</h2>
-          <button class="main__banner--title--btn">
-            Бесплатная консультация
-          </button>
-        </div>
-        <!-- <div class="grid-row">
-          <div class="main__banner--left">
-            <h1><span>visa step</span><br>сделай шаг на встречу визе</h1>
-            <span class="main__banner--left--line"></span>
-            <h2>Консультация и помощь в оформлении визы</h2>
-            <button class="main__banner--left--btn">
+          <a href="#main__consultation">
+            <button class="main__banner--title--btn">
               Бесплатная консультация
             </button>
-          </div>
-
-        </div> -->
+          </a>
+        </div>
       </div>
     </section>
     <section class="main__quotes">
@@ -117,13 +131,13 @@
       <div class="main__quotes--topWave"></div>
       <div class="main__quotes--bottomWave"></div>
     </section>
-    <section class="main__aboutUs">
+    <section class="main__aboutUs" id="main__aboutUs">
       <div class="container">
         <div class="main__aboutUs--header">
           <h2>Почему выбирают именно нас</h2>
         </div>
         <div class="main__aboutUs--info">
-          <div class="grid-row first">
+          <div class="grid-row first col-md">
             <div class="main__aboutUs--info--item">
               <div class="main__aboutUs--info--item--icon">
                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -192,7 +206,7 @@
         </div>
       </div>
     </section>
-    <section class="main__visaTypes">
+    <section class="main__visaTypes" id="main__visaTypes">
       <div class="container">
         <div class="main__visaTypes--header">
           <h2>Какие типы виз мы предлагаем</h2>
@@ -216,7 +230,8 @@
                 <!-- <p class="main__visaTypes--item--content--back--desc">Визу данного типа можно получить при наличии приглашения на работу.</p> -->
                 <p class="main__visaTypes--item--content--back--openningDate">Сроки открытия: 1 - 4 недели</p>
                 <button class="main__visaTypes--item--content--back--moreBtn" data-type="work">Подробнее</button>
-                <button class="main__visaTypes--item--content--back--reqBtn">Оставить заявку</button>
+                <a href="#main__consultation"><button class="main__visaTypes--item--content--back--reqBtn">Оставить заявку</button></a>
+                
               </div>
             </div>
           </div>
@@ -238,7 +253,7 @@
                 <!-- <p class="main__visaTypes--item--content--back--desc">Визу данного типа могут получить специалисты IT - сферы.</p> -->
                 <p class="main__visaTypes--item--content--back--openningDate">Сроки открытия: 1 - 6 недели</p>
                 <button class="main__visaTypes--item--content--back--moreBtn" data-type="it">Подробнее</button>
-                <button class="main__visaTypes--item--content--back--reqBtn">Оставить заявку</button>
+                <a href="#main__consultation"><button class="main__visaTypes--item--content--back--reqBtn">Оставить заявку</button></a>
               </div>
             </div>
           </div>
@@ -260,7 +275,7 @@
                 <!-- <p class="main__visaTypes--item--content--back--desc">Визу данного типа можно получить при наличии карты поляка.</p> -->
                 <p class="main__visaTypes--item--content--back--openningDate">Сроки открытия: 1 - 4 недели</p>
                 <button class="main__visaTypes--item--content--back--moreBtn" data-type="card">Подробнее</button>
-                <button class="main__visaTypes--item--content--back--reqBtn">Оставить заявку</button>
+                <a href="#main__consultation"><button class="main__visaTypes--item--content--back--reqBtn">Оставить заявку</button></a>
               </div>
             </div>
           </div>
@@ -281,7 +296,7 @@
                 </div>
                 <p class="main__visaTypes--item--content--back--openningDate">Сроки открытия: 1 - 6 недели</p>
                 <button class="main__visaTypes--item--content--back--moreBtn" data-type="visit">Подробнее</button>
-                <button class="main__visaTypes--item--content--back--reqBtn">Оставить заявку</button>
+                <a href="#main__consultation"><button class="main__visaTypes--item--content--back--reqBtn">Оставить заявку</button></a>
               </div>
             </div>
           </div>
@@ -302,7 +317,7 @@
                 <!-- <p class="main__visaTypes--item--content--back--desc">Визу данного типа можно получить при наличии пакета документов на учебу.</p> -->
                 <p class="main__visaTypes--item--content--back--openningDate">Сроки открытия: 1 - 4 недели</p>
                 <button class="main__visaTypes--item--content--back--moreBtn" data-type="student">Подробнее</button>
-                <button class="main__visaTypes--item--content--back--reqBtn">Оставить заявку</button>
+                <a href="#main__consultation"><button class="main__visaTypes--item--content--back--reqBtn">Оставить заявку</button></a>
               </div>
             </div>
           </div>
@@ -323,7 +338,7 @@
                 <!-- <p class="main__visaTypes--item--content--back--desc">Визу данного типа можно получить при наличии приглашения от принимающей стороны.</p> -->
                 <p class="main__visaTypes--item--content--back--openningDate">Сроки открытия: 1 - 6 недели</p>
                 <button class="main__visaTypes--item--content--back--moreBtn" data-type="business">Подробнее</button>
-                <button class="main__visaTypes--item--content--back--reqBtn">Оставить заявку</button>
+                <a href="#main__consultation"><button class="main__visaTypes--item--content--back--reqBtn">Оставить заявку</button></a>
               </div>
             </div>
           </div>
@@ -332,48 +347,76 @@
           <div class="main__visaTypes--moreInfo--modal">
             <div class="main__visaTypes--moreInfo--modal--desc"></div>  
             <button class="main__visaTypes--moreInfo--modal--closeBtn">&#10006;</button>
-            <button class="main__visaTypes--moreInfo--modal--reqBtn">Оставить заявку</button>
+            <a href="#main__consultation"><button class="main__visaTypes--moreInfo--modal--reqBtn">Оставить заявку</button></a>
           </div>
         </div>
       </div>
       </div>
     </section>
-    <section class="main__consultation">
+    <section class="main__consultation" id="main__consultation">
       <div class="container">
         <div class="grid-row">
           <div class="main__consultation--info">
-            <h2>Оставьте заявку на бесплатную консультацию</h2>
-            <p>Наш менеджер расскажет вам подробнее об условиях получения визы и предложит варианты</p>
+            <div class="main__consultation--info--text">
+              <h2>Оставьте заявку на бесплатную консультацию</h2>
+              <p>Наш менеджер расскажет вам подробнее об условиях получения визы и предложит варианты</p>
+            </div>
           </div>
-          <form class="main__consultation--form" name="consultation" action="mailto:dima7012095@gmail.com" method="post">
+          <form class="main__consultation--form" id="consultation--form" autocomplete="off">
             <div class="main__consultation--form--name">
-              <input class="main__consultation--form--name--input" id="name" type="text" placeholder="Имя" required="required" value="" name="name">
+              <input class="main__consultation--form--name--input" id="consultation--name" type="text" placeholder="Имя" value="" name="name">
+              <span class="main__consultation--form--name--error" id="consultation--name--error"></span>
+            </div>
+            <div class="main__consultation--form--email">
+              <input class="main__consultation--form--email--input" id="consultation--email" type="text" placeholder="Email" value="">
+              <span class="main__consultation--form--email--error" id="consultation--email--error"></span>
             </div>
             <div class="main__consultation--form--number">
-              <input class="main__consultation--form--number--input" type="tel" required="required" placeholder="Номер" value="">
+              <input class="main__consultation--form--number--input" id="consultation--number" type="tel" placeholder="Номер" value="">
+              <span class="main__consultation--form--number--error" id="consultation--number--error"></span>
             </div>
             <div class="main__consultation--form--visaType">
               <div class="main__consultation--form--visaType--select">
-                <button data-path="one" class="main__consultation--form--visaType--select--btn">Тип визы</button>
+                <span class="main__consultation--form--visaType--select--btnSpan"><input type="button" data-path="one" class="main__consultation--form--visaType--select--btn" id="consultation--selectBtn" value="Тип визы"></span>
                 <ul data-path="one" class="main__consultation--form--visaType--select--list">
-                  <li class="main__consultation--form--visaType--select--list--item" data-value="1">Рабочая виза</li>
-                  <li class="main__consultation--form--visaType--select--list--item" data-value="2">Poland Visa Harbour</li>
-                  <li class="main__consultation--form--visaType--select--list--item" data-value="3">Виза по карте поляка</li>
-                  <li class="main__consultation--form--visaType--select--list--item" data-value="4">Гостевой шенген</li>
-                  <li class="main__consultation--form--visaType--select--list--item" data-value="5">Учебная виза</li>
-                  <li class="main__consultation--form--visaType--select--list--item" data-value="6">Деловая виза</li>
+                  <li class="main__consultation--form--visaType--select--list--item" data-value="Рабочая виза">Рабочая виза</li>
+                  <li class="main__consultation--form--visaType--select--list--item" data-value="Poland Visa Harbour">Poland Visa Harbour</li>
+                  <li class="main__consultation--form--visaType--select--list--item" data-value="Виза по карте поляка">Виза по карте поляка</li>
+                  <li class="main__consultation--form--visaType--select--list--item" data-value="Гостевой шенген">Гостевой шенген</li>
+                  <li class="main__consultation--form--visaType--select--list--item" data-value="Учебная виза">Учебная виза</li>
+                  <li class="main__consultation--form--visaType--select--list--item" data-value="Деловая виза">Деловая виза</li>
                 </ul>
-                <input type="text" name="visaType" value="" class="main__consultation--form--visaType--select--inputHidden">
+                <input type="text" id="consultation--visaType" class="main__consultation--form--visaType--select--inputHidden">
               </div>
             </div>
-            <button class="main__consultation--form--sendBtn" type="submit">
-              Отправить
-            </button>
+            <button class="main__consultation--form--sendBtn" id="consultation--sendBtn" type="submit">Отправить</button>
           </form>
+          <div class="main__consultation--sendModal" id="main__consultation--sendModal">
+            <div class="main__consultation--sendModal--icon">
+              <i class="fa-regular fa-circle-check"></i>
+            </div>
+            <div class="main__consultation--sendModal--text">
+              <p>Сообщение успешно отправлено!</p>
+            </div>
+            <div class="main__consultation--sendModal--closeBtn">
+              <button id="main__consultation--sendModal--closeBtn">Закрыть</button>
+            </div>
+          </div>
+          <div class="main__consultation--notSendModal" id="main__consultation--notSendModal">
+            <div class="main__consultation--notSendModal--icon">
+              <i class="fa-solid fa-circle-exclamation"></i>
+            </div>
+            <div class="main__consultation--notSendModal--text">
+              <p>Сообщение не отправлено!</p>
+            </div>
+            <div class="main__consultation--notSendModal--closeBtn">
+              <button id="main__consultation--notSendModal--closeBtn">Закрыть</button>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- <div class="main__consultation--topWave"></div>
-      <div class="main__consultation--bottomWave"></div> -->
+      <div class="main__consultation--topWave"></div>
+      <div class="main__consultation--bottomWave"></div>
     </section>
     <section class="main__service">
       <div class="container">
@@ -603,60 +646,78 @@
         </div>
       </div>
     </section>
-    <section class="main__news">
+    <section class="main__news" id="main__news">
       <div class="container">
         <div class="main__news--header">
           <h2>Новости</h2>
         </div>
         <div class="main__news--info">
           <div class="grid-row">
-            <a href="https://www.instagram.com/p/CvE7eOaI4OO/" target="_blank">
-              <div class="main__news--info--item">
-                <img src="./images/content/news/8.jpg" alt="">
-              </div>
-            </a>
-            <a href="https://www.instagram.com/p/CupsGKmod6x/" target="_blank">
-              <div class="main__news--info--item">
-                <img src="./images/content/news/4.jpg" alt="">
-              </div>
-            </a>
-            <a href="https://www.instagram.com/p/Ct_WP-uIrXy/" target="_blank">
-              <div class="main__news--info--item">
-                <img src="./images/content/news/5.jpg" alt="">
-              </div>
-            </a>
-            <a href="https://www.instagram.com/p/CtUmk_7IU5A/" target="_blank">
-              <div class="main__news--info--item">
-                <img src="./images/content/news/6.jpg" alt="">
-              </div>
-            </a>
-            <a href="https://www.instagram.com/p/CtNGHbfIhzD/" target="_blank">
-              <div class="main__news--info--item">
-                <img src="./images/content/news/7.jpg" alt="">
-              </div>
-            </a>
-            <a href="https://www.instagram.com/p/CtJQpVeoNZI/" target="_blank">
-              <div class="main__news--info--item">
-                <img src="./images/content/news/2.jpg" alt="">
-              </div>
-            </a>
-            <a href="https://www.instagram.com/p/CtGrBgrIjW6/" target="_blank">
-              <div class="main__news--info--item">
-                <img src="./images/content/news/1.jpg" alt="">
-              </div>
-            </a>
-            <a href="https://www.instagram.com/p/CtEJ-XtIZGo/" target="_blank">
-              <div class="main__news--info--item">
-                <img src="./images/content/news/3.jpg" alt="">
-              </div>
-            </a>
+            <div class="main__news--info--wrapper">
+              <a href="https://www.instagram.com/p/CvE7eOaI4OO/" target="_blank">
+                <div class="main__news--info--wrapper--item">
+                  <img src="./images/content/news/8.jpg" alt="">
+                </div>
+              </a>
+            </div>
+            <div class="main__news--info--wrapper">
+              <a href="https://www.instagram.com/p/CupsGKmod6x/" target="_blank">
+                <div class="main__news--info--wrapper--item">
+                  <img src="./images/content/news/4.jpg" alt="">
+                </div>
+              </a>
+            </div>
+            <div class="main__news--info--wrapper">
+              <a href="https://www.instagram.com/p/Ct_WP-uIrXy/" target="_blank">
+                <div class="main__news--info--wrapper--item">
+                  <img src="./images/content/news/5.jpg" alt="">
+                </div>
+              </a>
+            </div>
+            <div class="main__news--info--wrapper">
+              <a href="https://www.instagram.com/p/CtUmk_7IU5A/" target="_blank">
+                <div class="main__news--info--wrapper--item">
+                  <img src="./images/content/news/6.jpg" alt="">
+                </div>
+              </a>
+            </div>
+            <div class="main__news--info--wrapper">
+              <a href="https://www.instagram.com/p/CtNGHbfIhzD/" target="_blank">
+                <div class="main__news--info--wrapper--item">
+                  <img src="./images/content/news/7.jpg" alt="">
+                </div>
+              </a>
+            </div>
+            <div class="main__news--info--wrapper">
+              <a href="https://www.instagram.com/p/CtJQpVeoNZI/" target="_blank">
+                <div class="main__news--info--wrapper--item">
+                  <img src="./images/content/news/2.jpg" alt="">
+                </div>
+              </a>
+            </div>
+            <div class="main__news--info--wrapper">
+              <a href="https://www.instagram.com/p/CtGrBgrIjW6/" target="_blank">
+                <div class="main__news--info--wrapper--item">
+                  <img src="./images/content/news/1.jpg" alt="">
+                </div>
+              </a>
+            </div>
+            <div class="main__news--info--wrapper">
+              <a href="https://www.instagram.com/p/CtEJ-XtIZGo/" target="_blank">
+                <div class="main__news--info--wrapper--item">
+                  <img src="./images/content/news/3.jpg" alt="">
+                </div>
+              </a>
+            </div>
           </div>
         </div>
-        <a href="https://www.instagram.com/visastep/" target="_blank">
-          <div class="main__news--button">
-            <p>Подписаться на instagram</p>
-          </div>
-        </a>
+        <div class="main__news--button">
+          <a href="https://www.instagram.com/visastep/" target="_blank">
+            <div class="main__news--button--text">
+              <p>Подписаться на instagram</p>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
     <section class="main__ticker">
@@ -702,31 +763,10 @@
           </div>
         </div>
       </div>
-      <!-- <div class="row">
-        <div class="main__ticker--slide">
-          <p>скидки от 2-х человек</p>
-          <div class="grid-row">
-            <p>скидки от 2-х человек</p>
-            <i class="fa-solid fa-bomb"></i>
-          </div>
-        </div>
-        <div class="main__ticker--slide">
-          <p>регистрация с детьми</p>
-          <div class="grid-row">
-            <p>регистрация с детьми</p>
-            <i class="fa-solid fa-bomb"></i>
-          </div>
-        </div>
-        <div class="main__ticker--slide">
-          <p>страхование</p>
-          <div class="grid-row">
-            <p>страхование</p>
-            <i class="fa-solid fa-bomb"></i>
-          </div>
-        </div>
-      </div> -->
+      <div class="main__ticker--topWave"></div>
+      <div class="main__ticker--bottomWave"></div>
     </section>
-    <section class="main__feedback">
+    <section class="main__feedback" id="main__feedback">
       <div class="container">
         <div class="main__feedback--header">
           <h2>Отзывы</h2>
@@ -789,12 +829,12 @@
                 <div class="main__feedback--info--swiper--item--wrap">
                   <div class="grid-row">
                     <div class="main__feedback--info--swiper--item--wrap--img">
-                      <img src="./images/content/feedback/mark.jpg" alt="">
+                      <img src="./images/content/feedback/Ksenia.jpg" alt="">
                     </div>
                     <div class="main__feedback--info--swiper--item--wrap--desc">
-                      <h2 class="main__feedback--info--swiper--item--wrap--desc--name">Марк</h2>
-                      <h3 class="main__feedback--info--swiper--item--wrap--desc--visaType">Рабочая виза</h3>
-                      <p class="main__feedback--info--swiper--item--wrap--desc--comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eveniet facilis quam modi?</p>
+                      <h2 class="main__feedback--info--swiper--item--wrap--desc--name">Ксения</h2>
+                      <h3 class="main__feedback--info--swiper--item--wrap--desc--visaType">Деловая виза</h3>
+                      <p class="main__feedback--info--swiper--item--wrap--desc--comment">Хочу поблагодарить данную фирму за полученную визу! Нуждалась в помощи по открытию визы в Польшу для срочной поездки. Обратилась к ребятам, и за короткие сроки получила все документы и запись в визовый центр.</p>
                       <div class="main__feedback--info--swiper--item--wrap--desc--openningDate">
                         <p>Срок получения: <span class="main__feedback--info--swiper--item--wrap--desc--openningDate--span">20 дней</span></p>
                       </div>
@@ -843,18 +883,27 @@
         </div>
       </div>
     </section>
-    <section class="main__contactUs">
+    <section class="main__contactUs" id="main__contactUs">
       <div class="container">
         <div class="main__contactUs--form">
           <div class="grid-row">
-            <form class="main__contactUs--form--message" id="contactUs--form">
+            <form class="main__contactUs--form--message" id="contactUs--form" autocomplete="off">
               <h2>Напишите нам</h2>
               <p>Отправьте нам письмо по интересующему Вас вопросу. Мы свяжемся с Вами в ближайшее время.</p>
-              <input class="main__contactUs--form--message--name" placeholder="Имя" id="contactUs--name"></input>
-              <input class="main__contactUs--form--message--email" placeholder="Email" id="contactUs--email"></input>
-              <textarea class="main__contactUs--form--message--text" placeholder="Сообщение" id="contactUs--message"></textarea>
-              <button class="main__contactUs--form--message--sendBtn" id="contactUs--sendBtn">Отправить</button>
-            </form>            
+              <div class="main__contactUs--form--message--name">
+                <input class="main__contactUs--form--message--name--input" placeholder="Имя" id="contactUs--name" ></input>
+                <span class="main__contactUs--form--message--name--error" id="main__contactUs--name--error"></span>
+              </div>
+              <div class="main__contactUs--form--message--email">
+                <input class="main__contactUs--form--message--email--input" placeholder="Email" id="contactUs--email"></input>
+                <span class="main__contactUs--form--message--email--error" id="main__contactUs--email--error"></span>
+              </div>
+              <div class="main__contactUs--form--message--text">
+                <textarea class="main__contactUs--form--message--text--input" placeholder="Сообщение" id="contactUs--message"></textarea>
+                <span class="main__contactUs--form--message--text--error" id="main__contactUs--text--error"></span>
+              </div>
+              <button class="main__contactUs--form--message--sendBtn" id="contactUs--sendBtn" type="submit">Отправить</button>
+            </form>
             <div class="main__contactUs--form--info">
               <h3>Контактная информация</h3>
               <!-- <div class="main__contactUs--form--info--changeBtn">
@@ -862,12 +911,16 @@
               </div> -->
               <div class="main__contactUs--form--info--text">
                 <div class="main__contactUs--form--info--text--email">
-                  <i class="fa-solid fa-envelope"></i>
-                  <p>visastep@mail.ru</p>
+                  <a href="mailto:visastep@mail.ru">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>visastep@mail.ru</p>
+                  </a>
                 </div>
                 <div class="main__contactUs--form--info--text--number">
-                  <i class="fa-solid fa-phone"></i>
-                  <p>+375 (33) 33-04-538</p>
+                  <a href="tel:+375333304538">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+375 (33) 33-04-538</p>
+                  </a>
                 </div>
                 <!-- <div class="main__contactUs--form--info--text--address">
                   <i class="fa-solid fa-location-dot"></i>
@@ -884,26 +937,62 @@
                 <span class="main__contactUs--form--info--plus--second"></span>
               </div>
               <div class="main__contactUs--form--info--lines">
-                <img src="./images/lines-contact.svg" alt="">
+                <img src="./images/content/lines-contact.svg" alt="">
               </div>
               <!-- <div class="main__contactUs--form--info--map"></div> -->
-              
+              <div class="main__contactUs--form--info--socials">
+                <div class="grid-row">
+                  <div class="main__contactUs--form--info--socials--item">
+                    <a href="tg://resolve?domain=ekaterenizm"><i class="fa-brands fa-telegram"></i></a>
+                  </div>
+                  <div class="main__contactUs--form--info--socials--item">
+                    <a href="viber://chat?number=%2B375333461225"><i class="fa-brands fa-viber"></i></a>
+                  </div>
+                  <div class="main__contactUs--form--info--socials--item">
+                    <a href="https://wa.me/+375298870855" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                  </div>
+                  <div class="main__contactUs--form--info--socials--item">
+                    <a href="https://www.instagram.com/visastep/"><i class="fa-brands fa-instagram"></i></a>
+                  </div>
+                </div>
+            </div>
+            <div class="main__contactUs--form--sendModal" id="main__contactUs--form--sendModal">
+              <div class="main__contactUs--form--sendModal--icon">
+                <i class="fa-regular fa-circle-check"></i>
+              </div>
+              <div class="main__contactUs--form--sendModal--text">
+                <p>Сообщение успешно отправлено!</p>
+              </div>
+              <div class="main__contactUs--form--sendModal--closeBtn">
+                <button id="main__contactUs--form--sendModal--closeBtn">Закрыть</button>
+              </div>
+            </div>
+            <div class="main__contactUs--form--notSendModal" id="main__contactUs--form--notSendModal">
+              <div class="main__contactUs--form--notSendModal--icon">
+                <i class="fa-solid fa-circle-exclamation"></i>
+              </div>
+              <div class="main__contactUs--form--notSendModal--text">
+                <p>Сообщение не отправлено!</p>
+              </div>
+              <div class="main__contactUs--form--notSendModal--closeBtn">
+                <button id="main__contactUs--form--notSendModal--closeBtn">Закрыть</button>
+              </div>
             </div>
           </div>
           <div class="main__contactUs--form--rightLine">
             <div class="main__contactUs--form--rightLine--socials">
               <div class="grid-row">
                 <div class="main__contactUs--form--rightLine--socials--item">
-                  <i class="fa-brands fa-telegram"></i>
+                  <a href="tg://resolve?domain=ekaterenizm"><i class="fa-brands fa-telegram"></i></a>
                 </div>
                 <div class="main__contactUs--form--rightLine--socials--item">
-                  <i class="fa-brands fa-viber"></i>
+                  <a href="viber://chat?number=%2B375333461225"><i class="fa-brands fa-viber"></i></a>
                 </div>
                 <div class="main__contactUs--form--rightLine--socials--item">
-                  <i class="fa-brands fa-whatsapp"></i>
+                  <a href="https://wa.me/+375298870855" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
                 <div class="main__contactUs--form--rightLine--socials--item">
-                  <i class="fa-brands fa-instagram"></i>
+                  <a href="https://www.instagram.com/visastep/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 </div>
               </div>
             </div>
@@ -914,22 +1003,16 @@
   </main>
   <footer class="footer">
     <div class="container">
-      <div class="footer__icon">
-        <img src="./images/content/logo/logo1.png" alt="logo">
-      </div>
-      <div class="footer__links">
-        <ul class="row">
-          <li>Главная</li>
-          <li>О нас</li>
-          <li>Услуги</li>
-          <li>Новости</li>
-          <li>Отзывы</li>
-          <li>Обратная связь</li>
-        </ul>
-      </div>
-      <span class="footer__line"></span>
-      <div class="footer__copyright">
-        2023 VisaStep. Все права защищены.
+      <div class="grid-row">
+        <div class="footer__privacy">
+          <p><a href="">Политика конфиденциальности</a></p>
+        </div>
+        <div class="footer__icon">
+          <img src="./images/content/logo/logo1.png" alt="logo">
+        </div>
+        <div class="footer__copyright">
+          <p>2023 VisaStep. Все права защищены.</p>
+        </div>
       </div>
     </div>
   </footer>
