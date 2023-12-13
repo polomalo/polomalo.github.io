@@ -3425,6 +3425,9 @@ h3 {
   .main__banner--title h2 {
     font-size: 20px;
   }
+  .main__banner--title--btn {
+    font-size: 16px;
+  }
   .main__quotes--info--slider--slide--header--icon {
     font-size: 25px;
   }
@@ -3457,6 +3460,14 @@ h3 {
   }
   .main__visaTypes--moreInfo--modal {
     margin: auto 40px;
+    overflow-y: scroll;
+    max-height: 800px;
+  }
+  .main__visaTypes--moreInfo--modal::-webkit-scrollbar {
+    width: 0;
+  }
+  .main__visaTypes--moreInfo--modal--desc {
+    position: relative;
   }
   .main__visaTypes--moreInfo--modal--desc .grid-row {
     row-gap: 20px;
@@ -3464,15 +3475,19 @@ h3 {
   .main__visaTypes--moreInfo--modal--desc--header h2 {
     font-size: 26px;
   }
+  .main__visaTypes--moreInfo--modal--desc--header h3 {
+    font-size: 16px;
+  }
   .main__visaTypes--moreInfo--modal--desc--leftInfo, .main__visaTypes--moreInfo--modal--desc--rightInfo {
     font-size: 16px;
   }
   .main__visaTypes--moreInfo--modal--desc--opening {
-    bottom: 90px;
+    bottom: -75px;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    width: 350px;
+    width: 300px;
+    font-size: 16px;
   }
   .main__visaTypes--moreInfo--modal--reqBtn {
     margin-top: 85px;
@@ -3711,6 +3726,14 @@ h3 {
   }
   .main__visaTypes--moreInfo--modal {
     margin: auto 40px;
+    overflow-y: scroll;
+    max-height: 600px;
+  }
+  .main__visaTypes--moreInfo--modal::-webkit-scrollbar {
+    width: 0;
+  }
+  .main__visaTypes--moreInfo--modal--desc {
+    position: relative;
   }
   .main__visaTypes--moreInfo--modal--desc .grid-row {
     row-gap: 20px;
@@ -3725,11 +3748,11 @@ h3 {
     font-size: 14px;
   }
   .main__visaTypes--moreInfo--modal--desc--opening {
-    bottom: 15%;
+    bottom: -75px;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    width: 300px;
+    width: 280px;
     font-size: 14px;
   }
   .main__visaTypes--moreInfo--modal--reqBtn {
@@ -3816,6 +3839,9 @@ h3 {
   }
   .main__news .grid-row {
     grid-template-columns: 1fr;
+  }
+  .main__news--button--text {
+    font-size: 16px;
   }
   .main__feedback--info--swiper .swiper-button-prev, .main__feedback--info--swiper .swiper-button-next {
     display: none;
