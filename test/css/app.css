@@ -231,6 +231,11 @@ input {
   letter-spacing: 2px; */
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body::-webkit-scrollbar {
   width: 12px;
 }
