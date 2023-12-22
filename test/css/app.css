@@ -599,7 +599,7 @@ h3 {
   font-weight: bold;
   color: #00ecc1;
   cursor: pointer;
-  background: transparent;
+  background: rgba(0, 0, 0, 0.4392156863);
   font-family: "Evolventa Regular", sans-serif;
   outline: none;
 }
@@ -622,7 +622,7 @@ h3 {
   border: 2px solid #00ecc1;
 }
 .main__banner--title--link--btn:hover::before {
-  top: -90%;
+  top: -100%;
   left: -50px;
 }
 .main__banner--title--link--btn:focus {
@@ -2262,6 +2262,9 @@ h3 {
 .main__feedback--info--swiper--nextBtn {
   color: #00ecc1 !important;
 }
+.main__feedback--info--swiper--pagination .swiper-pagination-bullet {
+  background: #00ecc1;
+}
 .main__contactUs {
   margin: 100px 0;
 }
@@ -3460,7 +3463,7 @@ h3 {
     display: none;
   }
 }
-@media (min-width: 400px) and (max-width: 725px) {
+@media (min-width: 450px) and (max-width: 725px) {
   .header__nav .grid-row {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -3646,7 +3649,17 @@ h3 {
     left: 5%;
   }
   .main__news .grid-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main__news--info--wrapper--item {
+    width: 170px;
+    height: 170px;
+  }
+  .main__feedback--info {
+    margin-top: 0;
+  }
+  .main__feedback--info--swiper {
+    height: 500px;
   }
   .main__feedback--info--swiper .swiper-button-prev, .main__feedback--info--swiper .swiper-button-next {
     display: none;
@@ -3729,7 +3742,7 @@ h3 {
     justify-self: center;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .header__nav .grid-row {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -3921,10 +3934,20 @@ h3 {
     left: 5%;
   }
   .main__news .grid-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main__news--info--wrapper--item {
+    width: 150px;
+    height: 150px;
   }
   .main__news--button--text {
     font-size: 16px;
+  }
+  .main__feedback--info {
+    margin-top: 0;
+  }
+  .main__feedback--info--swiper {
+    height: 500px;
   }
   .main__feedback--info--swiper .swiper-button-prev, .main__feedback--info--swiper .swiper-button-next {
     display: none;
