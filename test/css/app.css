@@ -593,6 +593,7 @@ h3 {
 .main__banner--title--link--btn {
   width: 250px;
   height: 60px;
+  line-height: 18px;
   position: relative;
   overflow: hidden;
   border: 2px solid #f4fefd;
