@@ -582,7 +582,7 @@ h3 {
 }
 .main__banner--title--link {
   width: 250px;
-  height: 60px;
+  height: 55px;
   position: relative;
   display: block;
   left: 50%;
@@ -592,7 +592,7 @@ h3 {
 }
 .main__banner--title--link--btn {
   width: 250px;
-  height: 60px;
+  height: 55px;
   line-height: 18px;
   position: relative;
   overflow: hidden;
@@ -813,12 +813,12 @@ h3 {
   justify-self: start;
 }
 .main__visaTypes {
-  padding: 80px 0;
+  padding: 90px 0;
   position: relative;
 }
 .main__visaTypes--header {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   color: #00ecc1;
   letter-spacing: 5px;
   font-family: "Evolventa Bold", sans-serif;
@@ -1707,7 +1707,7 @@ h3 {
   font-family: "Evolventa Bold", sans-serif;
 }
 .main__service--info {
-  margin-top: 80px;
+  margin-top: 60px;
   font-family: "Evolventa Regular", sans-serif;
 }
 .main__service--info .grid-row {
@@ -1950,7 +1950,7 @@ h3 {
   font-family: "Evolventa Bold", sans-serif;
 }
 .main__news--info {
-  margin-top: 80px;
+  margin-top: 40px;
   position: relative;
 }
 .main__news--info .grid-row {
@@ -1997,7 +1997,7 @@ h3 {
 }
 .main__news--link {
   width: 220px;
-  height: 60px;
+  height: 55px;
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -2006,6 +2006,9 @@ h3 {
   display: block;
 }
 .main__news--link--button {
+  width: 220px;
+  height: 55px;
+  line-height: 18px;
   position: relative;
   overflow: hidden;
   border: 2px solid #f4fefd;
@@ -3540,6 +3543,7 @@ h3 {
   }
   .main__visaTypes .grid-row {
     grid-template-columns: 1fr;
+    row-gap: 60px;
   }
   .main__visaTypes--moreInfo--modal {
     margin: auto 40px;
@@ -3660,6 +3664,9 @@ h3 {
   .main__news--info--wrapper--item {
     width: 170px;
     height: 170px;
+  }
+  .main__ticker--wrap--marq--item {
+    font-size: 20px;
   }
   .main__feedback--info {
     margin-top: 0;
@@ -3822,6 +3829,7 @@ h3 {
   }
   .main__visaTypes .grid-row {
     grid-template-columns: 1fr;
+    row-gap: 60px;
   }
   .main__visaTypes--header h2 {
     font-size: 25px;
@@ -3881,6 +3889,9 @@ h3 {
   }
   .main__consultation--bottomWave {
     bottom: -12%;
+  }
+  .main__service--info {
+    margin-top: 80px;
   }
   .main__service--info .grid-row {
     grid-template-columns: 1fr;
@@ -3948,6 +3959,9 @@ h3 {
   }
   .main__news--button--text {
     font-size: 16px;
+  }
+  .main__ticker--wrap--marq--item {
+    font-size: 20px;
   }
   .main__feedback--info {
     margin-top: 0;
