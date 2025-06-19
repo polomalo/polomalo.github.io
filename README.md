@@ -1,4 +1,6 @@
 <h1>This is my repository for testing and showing projects</h1>
+<h2><a href="https://polomalo.github.io/Shpora" target="_blank">Shpora JS</h2>
+<h3>Small analogue of learn.javascript.ru with using React.js and react-router</h3>
 <h2><a href="https://polomalo.github.io/test/index.html" target="_blank">Visa Step</h2>
 <h3>Real project of a business card website on HTML|CSS|JS. 95% completed because the customer stopped communicating.</h3>
 <h2><a href="https://polomalo.github.io/CV/index.html" target="_blank">old CV</h2>
